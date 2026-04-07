@@ -996,6 +996,9 @@ export default function DentalApp() {
           <p style={{marginTop:6}}>Powered by <a href="#">Booked.</a></p>
         </div>
       </footer>
+
+      {/* CALL WIDGET */}
+      <CallWidget />
     </div>
   );
 }
