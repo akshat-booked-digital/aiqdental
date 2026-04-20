@@ -157,3 +157,34 @@ export const FAQS = [
   { q: "Is parking available nearby?", a: "There is limited street parking on Fulham Palace Road. The nearest public car park is a 5-minute walk away." },
   { q: "What should I do in a dental emergency?", a: "Call our main number immediately. We reserve slots daily for emergencies. Outside hours, you'll be directed to our on-call dentist." },
 ];
+
+// Blog posts for site content
+export interface BlogPost {
+  id: string;
+  category: string;
+  title: string;
+  excerpt: string;
+}
+
+export const BLOG_POSTS: BlogPost[] = [
+  { id: "prevention", category: "Prevention", title: "How to avoid tooth decay", excerpt: "Simple daily habits that can save you from costly dental treatments." },
+  { id: "invisalign", category: "Orthodontics", title: "Is Invisalign right for you?", excerpt: "Everything you need to know before starting clear aligner treatment." },
+  { id: "anxiety", category: "Patient Care", title: "Overcoming dental anxiety", excerpt: "Tips and techniques for a stress-free visit to the dentist." },
+  { id: "whitening", category: "Cosmetic", title: "Professional vs at-home whitening", excerpt: "Understanding the difference between options for a brighter smile." },
+  { id: "implants", category: "Implants", title: "The dental implant journey", excerpt: "What to expect from consultation to final crown placement." },
+  { id: "children", category: "Paediatric", title: "Your child's first dental visit", excerpt: "How to prepare your little one for a positive experience." },
+];
+
+// Utility function for role colors
+export function roleColor(role: string): string {
+  switch (role) {
+    case "Dentist": return COLORS.navy;
+    case "Hygienist": return COLORS.teal;
+    case "Therapist": return COLORS.accent;
+    default: return COLORS.gray400;
+  }
+}
+
+// Today's day name for hours display
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+export const today = days[new Date().getDay()];
