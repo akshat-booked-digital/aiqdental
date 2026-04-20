@@ -237,7 +237,7 @@ function BlogPage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">Our Blog</div>
           <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>Dental health insights</h1>
-          <p className="hero-text">Expert advice, treatment guides, and practice news from the AIQ Dental team.</p>
+          <p className="hero-text">Expert advice, treatment guides, and practice news from the Amazing Smiles Dental team.</p>
         </div>
       </section>
       <section className="section" style={{paddingTop:24}}>
