@@ -905,13 +905,13 @@ function NHSPage({nav}: {nav: (p: string) => void}) {
               <h3>🛡️ 12-Month Guarantee</h3>
               <p>If a crown, bridge, or denture fitted on the NHS fails within 12 months, your dentist should repair or replace it free of charge — as long as you return to the same practice.</p>
             </div>
-            <div className="nhs-info-card">
-              <h3>🤝 NHS & Private Together</h3>
-              <p>At AIQ Dental, you can combine NHS and private care. For example, you might have your routine examinations and fillings on the NHS, while choosing private treatment for cosmetic work, implants, or orthodontics.</p>
-            </div>
-            <div className="nhs-info-card">
-              <h3>📋 How to Register</h3>
-              <p>Registering as an NHS patient at AIQ Dental is straightforward. Simply call us on 07930 327 445 or visit the practice in person. We'll book you in for a new patient examination (Band 1, £27.90).</p>
+          <div className="nhs-info-card">
+            <h3>🤝 NHS & Private Together</h3>
+            <p>At Amazing Smiles Dental, you can combine NHS and private care. For example, you might have your routine examinations and fillings on the NHS, while choosing private treatment for cosmetic work, implants, or orthodontics.</p>
+          </div>
+          <div className="nhs-info-card">
+            <h3>📋 How to Register</h3>
+            <p>Registering as an NHS patient at Amazing Smiles Dental is straightforward. Simply call us on 07930 327 445 or visit the practice in person. We'll book you in for a new patient examination (Band 1, £27.90).</p>
             </div>
           </div>
         </div>
