@@ -778,7 +778,7 @@ function TestimonialsPage({nav}: {nav: (p: string) => void}) {
       <section className="section">
         <div className="container" style={{textAlign:"center"}}>
           <div style={{fontSize:"3rem",marginBottom:16}}>⭐</div>
-          <div className="section-title" style={{maxWidth:500,margin:"0 auto 12px"}}>Are you an AIQ Dental patient?</div>
+          <div className="section-title" style={{maxWidth:500,margin:"0 auto 12px"}}>Are you an Amazing Smiles Dental patient?</div>
           <p style={{fontSize:"1rem",color:COLORS.textLight,maxWidth:480,margin:"0 auto 28px",lineHeight:1.7}}>If you've had a positive experience with us, we'd be incredibly grateful if you could leave us a Google review. Your feedback helps other patients find us and gives our team a huge morale boost.</p>
           <button className="btn btn-primary" style={{fontSize:"0.95rem",padding:"14px 32px"}}>Leave a Google Review →</button>
           <p style={{fontSize:"0.82rem",color:COLORS.gray400,marginTop:12}}>You'll be redirected to our Google Business listing</p>
