@@ -94,7 +94,7 @@ function AboutPage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">About Us</div>
           <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>A modern practice with <em style={{color:COLORS.teal,fontStyle:"italic"}}>traditional values</em></h1>
-          <p className="hero-text" style={{maxWidth:640}}>AIQ Dental was founded in 2018 with a simple belief: everyone deserves access to high-quality, compassionate dental care in an environment that feels welcoming, not clinical.</p>
+          <p className="hero-text" style={{maxWidth:640}}>Amazing Smiles Dental was founded in 2018 with a simple belief: everyone deserves access to high-quality, compassionate dental care in an environment that feels welcoming, not clinical.</p>
         </div>
       </section>
       <section className="section">
