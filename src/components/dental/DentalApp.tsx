@@ -272,9 +272,7 @@ function BlogArticle({post:b,nav}: {post: BlogPost; nav: (p: string) => void}) {
           <div className="article-meta">{b.date} · {b.readTime}</div>
         </div>
       </section>
-      <div className="article-content">
-        {b.content.map((p,i)=><p key={i}>{p}</p>)}
-      </div>
+      <div className="article-content" dangerouslySetInnerHTML={{__html: b.content}} />
       <CTABar nav={nav}/>
     </>
   );
