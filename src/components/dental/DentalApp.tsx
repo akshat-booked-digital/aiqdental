@@ -812,7 +812,7 @@ function NHSPage({nav}: {nav: (p: string) => void}) {
       <section className="hero" style={{paddingBottom:48}}>
         <div className="container">
           <div className="section-label">NHS Dentistry</div>
-          <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>NHS dental care at <em style={{color:COLORS.teal,fontStyle:"italic"}}>AIQ Dental</em></h1>
+          <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>NHS dental care at <em style={{color:COLORS.teal,fontStyle:"italic"}}>Amazing Smiles Dental</em></h1>
           <p className="hero-text" style={{maxWidth:640}}>We are proud to offer NHS dental services alongside our private treatments. NHS dentistry provides high-quality, subsidised care through a simple banding system — you pay one charge per course of treatment, no matter how many appointments it takes to complete.</p>
         </div>
       </section>
