@@ -747,7 +747,7 @@ function TestimonialsPage({nav}: {nav: (p: string) => void}) {
             <div className="community-card">
               <div className="comm-icon">🏃</div>
               <h3>Hammersmith Half Marathon Sponsor</h3>
-              <p>AIQ Dental has been a proud sponsor of the annual Hammersmith Half Marathon since 2021. Our team runs a hydration and first-aid station at the 8-mile mark.</p>
+              <p>Amazing Smiles Dental has been a proud sponsor of the annual Hammersmith Half Marathon since 2021. Our team runs a hydration and first-aid station at the 8-mile mark.</p>
             </div>
             <div className="community-card">
               <div className="comm-icon">🌱</div>
