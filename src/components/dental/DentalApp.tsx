@@ -401,7 +401,7 @@ function PrivatePage({nav}: {nav: (p: string) => void}) {
             </div>
           </div>
           <p style={{marginTop:20,fontSize:"0.88rem",color:COLORS.textLight,lineHeight:1.7}}>
-            We proudly offer both NHS and private care at AIQ Dental. Your dentist will always explain both options where applicable, so you can make an informed choice that's right for your situation and budget. There's never any pressure to go private — the best treatment is the one that works for you.
+            We proudly offer both NHS and private care at Amazing Smiles Dental. Your dentist will always explain both options where applicable, so you can make an informed choice that's right for your situation and budget. There's never any pressure to go private — the best treatment is the one that works for you.
           </p>
         </div>
       </section>
