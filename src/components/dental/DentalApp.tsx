@@ -94,17 +94,17 @@ function AboutPage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">About Us</div>
           <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>A modern practice with <em style={{color:COLORS.teal,fontStyle:"italic"}}>traditional values</em></h1>
-          <p className="hero-text" style={{maxWidth:640}}>AIQ Dental was founded in 2018 with a simple belief: everyone deserves access to high-quality, compassionate dental care in an environment that feels welcoming, not clinical.</p>
+          <p className="hero-text" style={{maxWidth:640}}>Amazing Smiles Dental was founded in 2018 with a simple belief: everyone deserves access to high-quality, compassionate dental care in an environment that feels welcoming, not clinical.</p>
         </div>
       </section>
       <section className="section">
         <div className="container">
           <div className="about-grid">
             <div className="about-text">
-              <p>Situated on Fulham Palace Road in the heart of Hammersmith, AIQ Dental has grown from a small two-surgery practice into one of West London's most comprehensive dental centres. Today, our team of 15 practitioners — five dentists, five hygienists, and five therapists — provides the full spectrum of dental care under one roof.</p>
+              <p>Situated on Fulham Palace Road in the heart of Hammersmith, Amazing Smiles Dental has grown from a small two-surgery practice into one of West London's most comprehensive dental centres. Today, our team of 15 practitioners — five dentists, five hygienists, and five therapists — provides the full spectrum of dental care under one roof.</p>
               <p>Our founding principal, together with our clinical director, spent two years designing the practice from scratch. Every detail was considered: the calming colour palette, the natural light flooding through floor-to-ceiling windows, the private treatment rooms with ceiling-mounted screens so patients can watch something relaxing during procedures.</p>
               <p>We invested heavily in technology from day one. Our practice runs on Dentally, a cloud-based dental software platform that allows us to manage appointments, patient records, and treatment plans seamlessly. We use digital X-rays, intraoral scanners, and CBCT 3D imaging — not because technology is fashionable, but because it delivers measurably better outcomes for our patients.</p>
-              <p>What sets AIQ Dental apart, though, is our people. We recruit clinicians not just for their technical skills but for their empathy, their communication, and their genuine desire to make patients feel at ease. Many of our patients initially came to us because they'd had negative experiences elsewhere. Helping them rebuild their confidence and relationship with dental care is the most rewarding part of what we do.</p>
+              <p>What sets Amazing Smiles Dental apart, though, is our people. We recruit clinicians not just for their technical skills but for their empathy, their communication, and their genuine desire to make patients feel at ease. Many of our patients initially came to us because they'd had negative experiences elsewhere. Helping them rebuild their confidence and relationship with dental care is the most rewarding part of what we do.</p>
               <p>We're proud to be an NHS practice that also offers a comprehensive range of private treatments. We believe that financial circumstances should never be a barrier to basic dental care, while also providing premium options for patients who want them.</p>
             </div>
             <div>
@@ -237,7 +237,7 @@ function BlogPage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">Our Blog</div>
           <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>Dental health insights</h1>
-          <p className="hero-text">Expert advice, treatment guides, and practice news from the AIQ Dental team.</p>
+          <p className="hero-text">Expert advice, treatment guides, and practice news from the Amazing Smiles Dental team.</p>
         </div>
       </section>
       <section className="section" style={{paddingTop:24}}>
@@ -360,14 +360,14 @@ function PrivatePage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">Private Dentistry</div>
           <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>Dental care on <em style={{color:COLORS.teal,fontStyle:"italic"}}>your terms</em></h1>
-          <p className="hero-text" style={{maxWidth:640}}>Private dentistry at AIQ Dental gives you access to the full breadth of modern treatments, premium materials, and the time and attention you deserve — all at transparent, affordable prices with flexible ways to pay.</p>
+          <p className="hero-text" style={{maxWidth:640}}>Private dentistry at Amazing Smiles Dental gives you access to the full breadth of modern treatments, premium materials, and the time and attention you deserve — all at transparent, affordable prices with flexible ways to pay.</p>
         </div>
       </section>
 
       <section className="section" style={{paddingTop:0}}>
         <div className="container">
           <div className="section-label">Why Choose Private</div>
-          <div className="section-title">The AIQ Dental private experience</div>
+          <div className="section-title">The Amazing Smiles Dental private experience</div>
           <div className="section-sub">Private care isn't about luxury — it's about having the full range of options available to you, delivered without compromise.</div>
           <div className="pvt-benefit-grid">
             {benefits.map((b,i)=>(
@@ -401,7 +401,7 @@ function PrivatePage({nav}: {nav: (p: string) => void}) {
             </div>
           </div>
           <p style={{marginTop:20,fontSize:"0.88rem",color:COLORS.textLight,lineHeight:1.7}}>
-            We proudly offer both NHS and private care at AIQ Dental. Your dentist will always explain both options where applicable, so you can make an informed choice that's right for your situation and budget. There's never any pressure to go private — the best treatment is the one that works for you.
+            We proudly offer both NHS and private care at Amazing Smiles Dental. Your dentist will always explain both options where applicable, so you can make an informed choice that's right for your situation and budget. There's never any pressure to go private — the best treatment is the one that works for you.
           </p>
         </div>
       </section>
@@ -669,9 +669,9 @@ function TestimonialsPage({nav}: {nav: (p: string) => void}) {
     { name:"Fatima Begum", initials:"FB", detail:"Patient since 2023 · Denplan Care", tag:"Denplan", color:"#2B8C96",
       text:"Switched from NHS to the Denplan Care plan and the difference is remarkable. Miriam spends so much more time with me during hygiene appointments, my gums have never been healthier, and the monthly payment means I never have to worry about unexpected costs. The 10% discount on treatments has already paid for itself." },
     { name:"Thomas Gallagher", initials:"TG", detail:"Patient since 2020 · Emergency Care", tag:"Emergency", color:COLORS.navy,
-      text:"Cracked a tooth on a Saturday evening and called in a panic. They got me in first thing Monday morning — the receptionist even called me back that evening to check I was managing the pain. Giovanni sorted the whole thing in one visit. That kind of care and responsiveness is why I've stayed with AIQ Dental and recommended them to half my office." },
+      text:"Cracked a tooth on a Saturday evening and called in a panic. They got me in first thing Monday morning — the receptionist even called me back that evening to check I was managing the pain. Giovanni sorted the whole thing in one visit. That kind of care and responsiveness is why I've stayed with Amazing Smiles Dental and recommended them to half my office." },
     { name:"Linda Pearson", initials:"LP", detail:"Patient since 2018 · Dentures", tag:"Dentures", color:"#4A7BA7",
-      text:"After years with ill-fitting dentures from another practice, I came to AIQ Dental at my daughter's suggestion. The difference is night and day. Marc took such care over the fit, and they didn't rest until I was completely happy. I can eat properly for the first time in years. I actually smile in photos again." },
+      text:"After years with ill-fitting dentures from another practice, I came to Amazing Smiles Dental at my daughter's suggestion. The difference is night and day. Marc took such care over the fit, and they didn't rest until I was completely happy. I can eat properly for the first time in years. I actually smile in photos again." },
     { name:"Marcus Wright", initials:"MW", detail:"Patient since 2021 · Whitening", tag:"Teeth Whitening", color:COLORS.accent,
       text:"Got the home whitening kit before my wedding. Simple process — custom trays, wore them for a couple of weeks, and the results were amazing. My teeth went about five shades lighter and the photos from the wedding day are proof. Callan was great at managing my expectations and the result was exactly what he predicted." },
     { name:"Sofia Nowak", initials:"SN", detail:"Patient since 2022 · Hygiene", tag:"Hygiene", color:"#2D7D46",
@@ -732,7 +732,7 @@ function TestimonialsPage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">Our Community</div>
           <div className="section-title">More than just a dental practice</div>
-          <div className="section-sub">Since 2018, AIQ Dental has been woven into the fabric of the Hammersmith community. We don't just treat teeth — we invest in the health and wellbeing of the people around us.</div>
+          <div className="section-sub">Since 2018, Amazing Smiles Dental has been woven into the fabric of the Hammersmith community. We don't just treat teeth — we invest in the health and wellbeing of the people around us.</div>
           <div className="community-grid">
             <div className="community-card">
               <div className="comm-icon">🏫</div>
@@ -747,7 +747,7 @@ function TestimonialsPage({nav}: {nav: (p: string) => void}) {
             <div className="community-card">
               <div className="comm-icon">🏃</div>
               <h3>Hammersmith Half Marathon Sponsor</h3>
-              <p>AIQ Dental has been a proud sponsor of the annual Hammersmith Half Marathon since 2021. Our team runs a hydration and first-aid station at the 8-mile mark.</p>
+              <p>Amazing Smiles Dental has been a proud sponsor of the annual Hammersmith Half Marathon since 2021. Our team runs a hydration and first-aid station at the 8-mile mark.</p>
             </div>
             <div className="community-card">
               <div className="comm-icon">🌱</div>
@@ -778,7 +778,7 @@ function TestimonialsPage({nav}: {nav: (p: string) => void}) {
       <section className="section">
         <div className="container" style={{textAlign:"center"}}>
           <div style={{fontSize:"3rem",marginBottom:16}}>⭐</div>
-          <div className="section-title" style={{maxWidth:500,margin:"0 auto 12px"}}>Are you an AIQ Dental patient?</div>
+          <div className="section-title" style={{maxWidth:500,margin:"0 auto 12px"}}>Are you an Amazing Smiles Dental patient?</div>
           <p style={{fontSize:"1rem",color:COLORS.textLight,maxWidth:480,margin:"0 auto 28px",lineHeight:1.7}}>If you've had a positive experience with us, we'd be incredibly grateful if you could leave us a Google review. Your feedback helps other patients find us and gives our team a huge morale boost.</p>
           <button className="btn btn-primary" style={{fontSize:"0.95rem",padding:"14px 32px"}}>Leave a Google Review →</button>
           <p style={{fontSize:"0.82rem",color:COLORS.gray400,marginTop:12}}>You'll be redirected to our Google Business listing</p>
@@ -812,7 +812,7 @@ function NHSPage({nav}: {nav: (p: string) => void}) {
       <section className="hero" style={{paddingBottom:48}}>
         <div className="container">
           <div className="section-label">NHS Dentistry</div>
-          <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>NHS dental care at <em style={{color:COLORS.teal,fontStyle:"italic"}}>AIQ Dental</em></h1>
+          <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>NHS dental care at <em style={{color:COLORS.teal,fontStyle:"italic"}}>Amazing Smiles Dental</em></h1>
           <p className="hero-text" style={{maxWidth:640}}>We are proud to offer NHS dental services alongside our private treatments. NHS dentistry provides high-quality, subsidised care through a simple banding system — you pay one charge per course of treatment, no matter how many appointments it takes to complete.</p>
         </div>
       </section>
@@ -905,13 +905,13 @@ function NHSPage({nav}: {nav: (p: string) => void}) {
               <h3>🛡️ 12-Month Guarantee</h3>
               <p>If a crown, bridge, or denture fitted on the NHS fails within 12 months, your dentist should repair or replace it free of charge — as long as you return to the same practice.</p>
             </div>
-            <div className="nhs-info-card">
-              <h3>🤝 NHS & Private Together</h3>
-              <p>At AIQ Dental, you can combine NHS and private care. For example, you might have your routine examinations and fillings on the NHS, while choosing private treatment for cosmetic work, implants, or orthodontics.</p>
-            </div>
-            <div className="nhs-info-card">
-              <h3>📋 How to Register</h3>
-              <p>Registering as an NHS patient at AIQ Dental is straightforward. Simply call us on 07930 327 445 or visit the practice in person. We'll book you in for a new patient examination (Band 1, £27.90).</p>
+          <div className="nhs-info-card">
+            <h3>🤝 NHS & Private Together</h3>
+            <p>At Amazing Smiles Dental, you can combine NHS and private care. For example, you might have your routine examinations and fillings on the NHS, while choosing private treatment for cosmetic work, implants, or orthodontics.</p>
+          </div>
+          <div className="nhs-info-card">
+            <h3>📋 How to Register</h3>
+            <p>Registering as an NHS patient at Amazing Smiles Dental is straightforward. Simply call us on 07930 327 445 or visit the practice in person. We'll book you in for a new patient examination (Band 1, £27.90).</p>
             </div>
           </div>
         </div>
