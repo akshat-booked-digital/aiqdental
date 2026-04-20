@@ -360,7 +360,7 @@ function PrivatePage({nav}: {nav: (p: string) => void}) {
         <div className="container">
           <div className="section-label">Private Dentistry</div>
           <h1 style={{fontFamily:"'Lora',serif",fontSize:"2.8rem",color:COLORS.navy,marginBottom:12}}>Dental care on <em style={{color:COLORS.teal,fontStyle:"italic"}}>your terms</em></h1>
-          <p className="hero-text" style={{maxWidth:640}}>Private dentistry at AIQ Dental gives you access to the full breadth of modern treatments, premium materials, and the time and attention you deserve — all at transparent, affordable prices with flexible ways to pay.</p>
+          <p className="hero-text" style={{maxWidth:640}}>Private dentistry at Amazing Smiles Dental gives you access to the full breadth of modern treatments, premium materials, and the time and attention you deserve — all at transparent, affordable prices with flexible ways to pay.</p>
         </div>
       </section>
 
