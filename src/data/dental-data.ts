@@ -164,15 +164,66 @@ export interface BlogPost {
   category: string;
   title: string;
   excerpt: string;
+  date: string;
+  readTime: string;
+  content: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
-  { id: "prevention", category: "Prevention", title: "How to avoid tooth decay", excerpt: "Simple daily habits that can save you from costly dental treatments." },
-  { id: "invisalign", category: "Orthodontics", title: "Is Invisalign right for you?", excerpt: "Everything you need to know before starting clear aligner treatment." },
-  { id: "anxiety", category: "Patient Care", title: "Overcoming dental anxiety", excerpt: "Tips and techniques for a stress-free visit to the dentist." },
-  { id: "whitening", category: "Cosmetic", title: "Professional vs at-home whitening", excerpt: "Understanding the difference between options for a brighter smile." },
-  { id: "implants", category: "Implants", title: "The dental implant journey", excerpt: "What to expect from consultation to final crown placement." },
-  { id: "children", category: "Paediatric", title: "Your child's first dental visit", excerpt: "How to prepare your little one for a positive experience." },
+  { 
+    id: "prevention", 
+    category: "Prevention", 
+    title: "How to avoid tooth decay", 
+    excerpt: "Simple daily habits that can save you from costly dental treatments.",
+    date: "Mar 15, 2024",
+    readTime: "5 min read",
+    content: "<p>Tooth decay is one of the most common preventable diseases. By following a few simple habits, you can protect your teeth and maintain excellent oral health.</p><h3>Brush Twice Daily</h3><p>Brush your teeth for at least two minutes, twice a day, using fluoride toothpaste. Make sure to reach all surfaces including the back teeth and along the gumline.</p><h3>Limit Sugary Foods</h3><p>Sugar feeds the bacteria that cause decay. Try to limit sugary snacks and drinks, and when you do indulge, rinse your mouth with water afterwards.</p><h3>Regular Check-ups</h3><p>Visit your dentist every six months for professional cleaning and examination. Early detection of problems means simpler, less expensive treatments.</p>"
+  },
+  { 
+    id: "invisalign", 
+    category: "Orthodontics", 
+    title: "Is Invisalign right for you?", 
+    excerpt: "Everything you need to know before starting clear aligner treatment.",
+    date: "Mar 10, 2024",
+    readTime: "6 min read",
+    content: "<p>Invisalign has revolutionised orthodontic treatment, offering a nearly invisible way to straighten your teeth. But is it the right choice for you?</p><h3>How Invisalign Works</h3><p>Invisalign uses a series of custom-made, clear plastic aligners that gradually move your teeth into position. Each set of aligners is worn for 1-2 weeks before moving to the next in the series.</p><h3>Ideal Candidates</h3><p>Invisalign works well for mild to moderate crowding, spacing issues, and some bite problems. However, complex cases may still require traditional braces.</p><h3>The Benefits</h3><p>The aligners are removable for eating and cleaning, and they're virtually invisible when worn. Most people won't even notice you're having treatment.</p>"
+  },
+  { 
+    id: "anxiety", 
+    category: "Patient Care", 
+    title: "Overcoming dental anxiety", 
+    excerpt: "Tips and techniques for a stress-free visit to the dentist.",
+    date: "Mar 5, 2024",
+    readTime: "4 min read",
+    content: "<p>Dental anxiety affects millions of people and can prevent them from getting the care they need. Here are strategies to help you feel more comfortable.</p><h3>Communicate Your Fears</h3><p>Tell your dentist about your anxiety. A caring dental team will take extra time to explain procedures and ensure you're comfortable throughout your visit.</p><h3>Distraction Techniques</h3><p>Bring headphones to listen to music or podcasts. Many practices also offer ceiling-mounted screens to watch videos during treatment.</p><h3>Start Small</h3><p>If you're very anxious, start with a simple check-up rather than jumping into treatment. Building trust with your dentist over time makes future visits easier.</p>"
+  },
+  { 
+    id: "whitening", 
+    category: "Cosmetic", 
+    title: "Professional vs at-home whitening", 
+    excerpt: "Understanding the difference between options for a brighter smile.",
+    date: "Feb 28, 2024",
+    readTime: "5 min read",
+    content: "<p>Everyone wants a brighter smile, but with so many whitening options available, it can be hard to know which is right for you.</p><h3>Professional Whitening</h3><p>In-surgery whitening uses stronger bleaching agents and can achieve dramatic results in a single visit. Dentist-prescribed take-home kits are also more effective than over-the-counter options.</p><h3>At-Home Options</h3><p>Whitening toothpastes and strips from shops can help maintain results but won't achieve the same level of whitening. They're best used after professional treatment.</p><h3>Important Considerations</h3><p>Not everyone is a candidate for whitening. Existing restorations like crowns and veneers won't whiten, and some people may experience sensitivity.</p>"
+  },
+  { 
+    id: "implants", 
+    category: "Implants", 
+    title: "The dental implant journey", 
+    excerpt: "What to expect from consultation to final crown placement.",
+    date: "Feb 20, 2024",
+    readTime: "7 min read",
+    content: "<p>Dental implants are the gold standard for replacing missing teeth. Understanding the process can help you feel prepared and confident.</p><h3>The Consultation</h3><p>Your dentist will assess your bone density with X-rays or CBCT scans to ensure there's enough bone to support an implant. If not, bone grafting may be recommended.</p><h3>Implant Placement</h3><p>The implant is a small titanium post surgically placed into your jawbone. Local anaesthetic ensures the procedure is painless, and most patients return to normal activities the next day.</p><h3>Healing and Restoration</h3><p>After 3-6 months, when the implant has fused with your bone, a custom crown is attached. The result looks and functions just like a natural tooth.</p>"
+  },
+  { 
+    id: "children", 
+    category: "Paediatric", 
+    title: "Your child's first dental visit", 
+    excerpt: "How to prepare your little one for a positive experience.",
+    date: "Feb 15, 2024",
+    readTime: "4 min read",
+    content: "<p>A child's first dental visit sets the tone for their relationship with oral health. Here's how to make it a positive experience.</p><h3>When to Start</h3><p>Children should see a dentist by their first birthday or within six months of their first tooth appearing — whichever comes first.</p><h3>Prepare Positively</h3><p>Talk about the dentist in a fun, exciting way. Books and videos about dental visits can help familiarise your child with what to expect.</p><h3>What Happens</h3><p>The first visit is usually quick and involves counting teeth, checking development, and discussing oral hygiene habits. It's about building trust, not doing treatment.</p>"
+  },
 ];
 
 // Utility function for role colors
