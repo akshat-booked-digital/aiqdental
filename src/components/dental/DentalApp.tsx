@@ -367,7 +367,7 @@ function PrivatePage({nav}: {nav: (p: string) => void}) {
       <section className="section" style={{paddingTop:0}}>
         <div className="container">
           <div className="section-label">Why Choose Private</div>
-          <div className="section-title">The AIQ Dental private experience</div>
+          <div className="section-title">The Amazing Smiles Dental private experience</div>
           <div className="section-sub">Private care isn't about luxury — it's about having the full range of options available to you, delivered without compromise.</div>
           <div className="pvt-benefit-grid">
             {benefits.map((b,i)=>(
