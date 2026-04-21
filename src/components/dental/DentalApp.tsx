@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { COLORS, TEAM, SERVICES, BLOG_POSTS, roleColor, today, type TeamMember, type Service, type BlogPost } from "@/data/dental-data";
+import VoiceWidget from "./VoiceWidget";
 import "@/styles/dental.css";
 
 // ── NAV ITEMS ────────────────────────────────────────────────────
