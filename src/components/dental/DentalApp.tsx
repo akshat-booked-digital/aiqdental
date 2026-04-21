@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { COLORS, TEAM, SERVICES, BLOG_POSTS, roleColor, today, type TeamMember, type Service, type BlogPost } from "@/data/dental-data";
+import VoiceWidget from "./VoiceWidget";
 import "@/styles/dental.css";
 
 // ── NAV ITEMS ────────────────────────────────────────────────────
@@ -994,14 +995,7 @@ export default function DentalApp() {
         </div>
       </footer>
 
-      {/* FOOTER */}
-      <footer className="dental-footer">
-        <div className="container">
-          <p>© 2026 AIQ Dental · 109-111 Fulham Palace Road, London W6 8JA · 07930 327 456</p>
-          <p style={{marginTop:6}}>Powered by <a href="#">Booked.</a></p>
-        </div>
-      </footer>
-
+      <VoiceWidget />
     </div>
   );
 }
