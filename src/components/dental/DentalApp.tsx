@@ -944,7 +944,7 @@ export default function DentalApp() {
       {/* NAV */}
       <nav className="dental-nav">
         <div className="nav-inner">
-          <div className="nav-logo" onClick={()=>nav("home")}>AIQ <span>Dental</span></div>
+          <div className="nav-logo" onClick={()=>nav("home")}>Amazing <span>Smiles</span></div>
           <div className="nav-links">
             {navItems.map(n=>(
               <button key={n.id} className={`nav-link ${page===n.id||(page.startsWith("service-")&&n.id==="services")||(page.startsWith("blog-")&&n.id==="blog")?"active":""}`} onClick={()=>nav(n.id)}>{n.label}</button>
