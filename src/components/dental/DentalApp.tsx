@@ -1003,6 +1003,7 @@ export default function DentalApp() {
         </div>
       </footer>
 
+      <CallWidget />
     </div>
   );
 }
