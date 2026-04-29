@@ -1,44 +1,61 @@
+# Floating Call-Back Widget
 
+A floating phone button in the bottom-right opens a small form (name, country code + phone, optional details). Submitting calls a secure backend that forwards the request to Frontly's API, keeping the API key hidden from the browser.
 
-## Plan: Floating Call-Back Widget with Secure Edge Function
+## What the user sees
 
-### Overview
-Add a floating phone button (bottom-right) that opens a callback request form. The API call goes through a Supabase Edge Function to keep the API key secret.
+- Teal circular button with a phone icon, fixed bottom-right, on every page
+- Click → compact card slides open with:
+  - Name (required)
+  - Country code dropdown (+44 default, +91, +1, +61, +971, …) + phone number (required)
+  - Additional details (optional textarea)
+  - "Call me" button + close (×)
+- On submit: spinner → success or error toast
+- Styled to match the navy/teal Amazing Smiles Dental theme
 
-### Step 1: Set up Supabase integration
-- Initialize Supabase in the project (client config + dependencies)
-- This is needed to invoke the edge function from the frontend
+## How it works (technical)
 
-### Step 2: Store the API key as a runtime secret
-- Use the secrets tool to prompt you to add `FRONTLY_API_KEY` with value `fk_live_5a09a340c41d6026e934a02c5c7a28ba3be44e8fe7f31c84cab2d61f370705b3`
+```text
+Browser (CallWidget)
+   │  supabase.functions.invoke("initiate-call", { to, name, additionalDetails })
+   ▼
+Edge Function: initiate-call
+   │  reads FRONTLY_API_KEY from Deno.env (never exposed to browser)
+   │  validates input with zod
+   │  POST https://uk-voice.frontly.in/api/v1/call
+   ▼
+Frontly API
+```
 
-### Step 3: Create Edge Function `supabase/functions/initiate-call/index.ts`
-- Accepts POST with `{ to, name, additionalDetails }`
-- Validates input (phone format, name required)
-- Reads `FRONTLY_API_KEY` from `Deno.env`
-- Forwards request to `https://uk-voice.frontly.in/api/v1/call`
-- Returns success/error response with CORS headers
-- No JWT verification needed (public endpoint)
+### Steps
 
-### Step 4: Create `src/components/dental/CallWidget.tsx`
-- Floating teal circle button with phone icon (Lucide `Phone`), fixed bottom-right
-- Click toggles a compact card with:
-  - Name input (required)
-  - ISD code dropdown (+44 default, +91, +1, +61, +971, etc.) + phone number input
-  - Additional details textarea (optional)
-  - "Call" CTA button
-  - Close button
-- On submit: invokes the edge function, shows loading spinner, then success/error toast (sonner)
-- Styled with existing dental theme (navy/teal)
+1. **Enable Lovable Cloud** so we can deploy the edge function and use the Supabase client.
+2. **Add `FRONTLY_API_KEY` secret** (`fk_live_6be69385456cb3aea36e696e78b49b3826f17026bda20c379edc425edfa760cc`) via the secrets tool — stored server-side only.
+3. **Create edge function** `supabase/functions/initiate-call/index.ts`:
+   - CORS headers + OPTIONS handler
+   - Zod validation: `to` (E.164-ish regex), `name` (1–100), `additionalDetails` (≤500, optional)
+   - Forwards to Frontly with `x-api-key` header
+   - Returns `{ ok: true }` or `{ error }` with appropriate status
+   - `verify_jwt = false` (public widget)
+4. **Create `src/components/dental/CallWidget.tsx`**:
+   - Local state for open/closed, form fields, loading
+   - Country code list as constant
+   - Combines code + number into E.164 `to` value before sending
+   - Uses sonner `toast` for feedback
+   - Tailwind classes consistent with existing dental theme
+5. **Mount widget** in `src/components/dental/DentalApp.tsx` so it appears on every page.
 
-### Step 5: Add widget to `DentalApp.tsx`
-- Import and render `<CallWidget />` so it appears on every page
+## Files
 
-### Files changed
 | File | Action |
 |------|--------|
 | `supabase/functions/initiate-call/index.ts` | Create |
+| `src/integrations/supabase/client.ts` | Auto-created by Cloud setup |
 | `src/components/dental/CallWidget.tsx` | Create |
-| `src/components/dental/DentalApp.tsx` | Edit — add `<CallWidget />` |
-| `src/integrations/supabase/client.ts` | Create (Supabase client setup) |
+| `src/components/dental/DentalApp.tsx` | Edit — render `<CallWidget />` |
 
+## Security notes
+
+- API key lives only as a server-side secret — never shipped to the browser
+- All inputs validated server-side (zod) and client-side
+- Phone normalized to E.164 before forwarding
