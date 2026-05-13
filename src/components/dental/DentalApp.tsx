@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { COLORS, TEAM, SERVICES, BLOG_POSTS, roleColor, today, type TeamMember, type Service, type BlogPost } from "@/data/dental-data";
-import CallWidget from "./CallWidget";
+
 import "@/styles/dental.css";
 
 // ── NAV ITEMS ────────────────────────────────────────────────────
@@ -1002,8 +1002,6 @@ export default function DentalApp() {
           <p style={{marginTop:6}}>Powered by <a href="#">Booked.</a></p>
         </div>
       </footer>
-
-      <CallWidget />
     </div>
   );
 }
