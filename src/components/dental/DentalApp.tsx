@@ -1002,6 +1002,14 @@ export default function DentalApp() {
           <p style={{marginTop:6}}>Powered by <a href="#">Booked.</a></p>
         </div>
       </footer>
+
+      <iframe
+        src="https://uk-voice.frontly.in/embed?pk=fk_pub_ddf56c95b197a033adad2f1b9a99fb46657009c46b6f50c83cc62a8b69d11423&biz=biz_3af8272a22351749&bot=bot_1778219356143419600&mode=auto"
+        allow="microphone"
+        sandbox="allow-scripts allow-same-origin"
+        title="Call assistant"
+        style={{position:"fixed",bottom:24,right:24,width:380,height:600,border:0,borderRadius:12,zIndex:9999,boxShadow:"0 12px 40px rgba(27,42,74,0.25)"}}
+      />
     </div>
   );
 }
